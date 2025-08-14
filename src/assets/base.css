@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* colors */
+:root {
+  --blue-main: #4A7BAF;
+  --blue-pastel: #dbeaf7;
+  --blue-sky: #8fbfe5;
+  --blue-dust: #5f90c4;
+  --blue-ink: #1e355e;
+  --blue-midnight: #0e1c33;
+  --blue-cream: #f1f7fc;
+  --text-area-blue: #f7fbff;
+  --blue-secondary: #9abfe5;
+  --blue-background: #e1effb;
+  --blue-container: #eef6fd;
+  --blue-accent: #5c9ed1;
+  --blue-very-light: #f3f8fd;
+  --error-pinkish: #d36b9f;
+  --blue-disabled: #bccfe3;
+
+  --breakpoint-desktop: '1024px';
+  --breakpoint-tablet: '768px';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  list-style: none;
+}
+
+body {
+  background-color: var(--beige-background);
+
+  min-height: 100vh;
+  color: var(--color-text);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media screen and (max-height: 770px) {
+    background-color: var(--beige-container);
+  }
+
+  @media screen and (max-width: 900px) {
+    background-color: var(--beige-container);
+  }
+  @media screen and (max-width: var( --breakpoint-tablet)) {
+    background-color: var(--beige-container);
+  }
+}
